@@ -115,7 +115,7 @@ namespace dotnet_registration_api.Services
             user.LastName = updateRequest.LastName;
             user.Username = updateRequest.Username;
             user.PasswordHash  = hashedPassword;
-            //user.OldPassword --- we need only for history pin for example if we need to se rule - new password cannot be same as previus 3, or 5....
+            //user.OldPassword --- we need only for history pin for example if we need too se rule - new password cannot be same as previus 3, or 5....
             
 
             return await _userRepository.UpdateUser(user);
