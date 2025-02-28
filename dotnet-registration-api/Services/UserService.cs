@@ -136,7 +136,7 @@ namespace dotnet_registration_api.Services
                 user = users.Where(x => x.Username == newUser).FirstOrDefault();
                 if (user != null)
                 {
-                    existingUser = true; //does not exist
+                    existingUser = true; //user exist
                 }
                 else
                 {
@@ -162,7 +162,7 @@ namespace dotnet_registration_api.Services
                 user = users.Where(x => x.Username == newUser).FirstOrDefault();
                 if (user != null)
                 {
-                    existingUser = true; //does not exist
+                    existingUser = true; //user exist
                 }
                 else
                 {
